@@ -1,0 +1,40 @@
+.bannerContent {
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-color: linear-gradient(
+        0deg,
+    rgba(0,0,0,0.2) 50%, rgba(0,0,0,0.4) 100%);
+    object-fit: cover;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 0 3em;
+    line-height: 1;
+    text-align: left;
+}
+
+.bannerContent h2 {
+    font-size: 3em;
+    color: var(--light);
+    margin-bottom: 0.2em;
+}
+
+.bannerContent p {
+    font-size: x-large;
+    color: var(--light);
+    margin-bottom: 1em;
+}
+
+.bannerBtn {
+    text-decoration: none;
+}
+.bannerBtn button {
+    background-color: #56c596;
+    color: var(--light);
+    font-size: 1.2em;
+    box-shadow: var(--shadow);
+}

@@ -1,0 +1,62 @@
+.infoSectionContent {
+    margin: 2em;
+}
+
+.infoSectionContent > .infoText {
+    text-align: left;
+    line-height: 2;
+    margin-bottom: 2em;
+}
+
+.infoSectionContent > .infoText h3 {
+    font-size: 2em;
+    color: #56c596;
+}
+
+.infoText .infoBtn {
+    text-decoration: none;  
+}
+.infoText .infoBtn button {
+    background-color: var(--dark);
+    color: var(--light);
+    text-transform: capitalize;
+    padding: 1em;
+    width: 100%;
+    display: block;
+    text-align: center;
+    margin: auto;
+}
+.infoText > .infoBtn button:active,
+.infoText > .infoBtn button:hover {
+    background-color: #10d684;
+    color: var(--light);
+}
+
+
+.infoSectionContent > .infoImage img {
+    height: 70vh;
+    object-fit: fit;
+}
+
+@media screen and (min-width: 576px) {
+    .infoSectionContent > .infoImage img {
+        height: 100vh;
+    }
+}
+
+@media screen  and (min-width: 776px) {
+    .infoSectionContent {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 20px;
+        margin: 5em;
+        
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+
+    .infoSectionContent > .infoText {
+        padding: 2em;
+    }
+}

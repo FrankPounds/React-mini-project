@@ -1,0 +1,49 @@
+.interiorContent {
+    margin: 2em;
+}
+
+.interiorContent > .interiorText h3 {
+    font-size: 2em;
+    color: var(--dark);
+    margin-bottom: 1em;
+}
+
+.interiorContent > .interiorText p {
+    text-align: left;
+    line-height: 2;
+}
+
+.interiorContent > .interiorBtn {
+    text-decoration: none;
+}
+
+.interiorContent > .interiorText button {
+    width: 50%;
+    display: block;
+    text-align: center;
+    margin: auto;
+    padding: 1em;
+    margin-bottom: 1em;
+}
+
+@media screen and (min-width: 776px) {
+    .interiorContent {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 20px;
+    }
+
+    .InteriorSection {
+        background-color: #56c596;
+        padding: 3em 0;
+    }
+
+    .interiorContent > .interiorText button {
+        width: 100%;
+    }
+
+    .interiorContent > .interiorImage img {
+        box-shadow: var(--shadow);
+        padding: 1em;
+    }
+}

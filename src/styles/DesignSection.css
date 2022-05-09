@@ -1,0 +1,63 @@
+.designContent {
+    margin: 2em;
+}
+
+.designContent > .designText {
+    text-align: left;
+    line-height: 2;
+    margin-bottom: 2em;
+}
+
+.designContent > .designText h3 {
+    font-size: 2em;
+    color: #56c596;
+}
+
+.designText .designBtn {
+    text-decoration: none;  
+}
+.designText .designBtn button {
+    background-color: var(--dark);
+    color: var(--light);
+    text-transform: capitalize;
+    padding: 1em;
+    width: 100%;
+    display: block;
+    text-align: center;
+    margin: auto;
+}
+.designText > .designBtn button:active,
+.designText > .designBtn button:hover {
+    background-color: #10d684;
+    color: var(--light);
+}
+
+
+.designContent > .designImage img {
+    height: 70vh;
+    object-fit: fit;
+}
+
+@media screen and (min-width: 576px) {
+    .designContent > .designImage img {
+        height: 100vh;
+    }
+}
+
+@media screen  and (min-width: 776px) {
+    .designContent {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 20px;
+        margin: 5em;
+        
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+
+    .designContent > .designText {
+        padding: 2em;
+        
+    }
+}

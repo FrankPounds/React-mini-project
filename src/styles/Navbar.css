@@ -1,0 +1,126 @@
+.Navbar {
+    width: 100%;
+    position: fixed;
+    z-index: 100;
+}
+
+.mainNav {
+    display: flex;
+    justify-content: space-around;
+    background-color: #56c596;
+}
+
+.logo {
+    text-transform: capitalize;
+    padding: 5px 20px;
+}
+.Bezo {
+    color: #2039a8;
+}
+.Money {
+    color: var(--light);
+}
+
+nav ul {
+    position: absolute;
+    text-align: center;
+}
+
+nav ul a {
+    text-decoration: none;
+    display: block;
+    color: var(--dark);
+    text-transform: capitalize;
+    padding: 5px 20px;
+    margin: 1em;
+}
+nav ul a:active,
+nav ul a:hover {
+    background-color: var(--dark);
+    color: var(--light);
+}
+
+nav ul > a:hover:nth-of-type(4) {
+    background-color: transparent;
+}
+
+.navBar svg {
+    font-size: 30px;
+    color: var(--light);
+}
+
+.navBtn {
+    display: inline-block;
+    padding: 10px;
+    align-self: center;
+}
+
+.sideBar {
+    width: 150px;
+    height: 100vh;
+    position: fixed;
+    background-color: var(--light);
+    left: -100%;
+    top: 55px;
+    padding-top: 60px;
+    overflow-x: hidden;
+    z-index: 999;
+    opacity: 0.9;
+    transition: .5s ease;
+}
+
+.sideBar .active {
+    left: 0;
+    transition: .3s ease;
+}
+
+.closeBtn {
+    position: absolute;
+    color: var(--dark);
+    font-size: 25px;
+    top: 0;
+    right: 0%;
+    padding: 10px 20px;
+}
+
+.navContactBtn {
+    text-decoration: none;
+    margin: 1em 0;
+    padding-right: 2em;
+}
+.navContactBtn button {
+    color: var(--light);
+    background-color: #2039a8;
+    text-transform: capitalize;
+    
+}
+
+@media screen and (min-width: 776px){
+    nav ul {
+        display: flex!important;
+        flex-wrap: wrap;
+        justify-content: center;
+        position: relative;
+    }
+
+    nav ul a {
+        background-color: transparent;
+        color: var(--light);
+        padding: 0 1em;
+        margin: 1em 0.5em;
+        display: block;
+    }
+
+    nav ul a:hover {
+        background-color: transparent;
+        color: var(--light);
+    }
+
+    .navBtn, .closeBtn {
+        display: none;
+    }
+
+    .sideBar {
+        display: contents;
+    }
+}

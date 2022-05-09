@@ -1,0 +1,39 @@
+.App {
+  text-align: center;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 14px;
+  line-height: 1.5;
+  background-color: #f4f4f4;
+  box-sizing: border-box;
+  text-rendering: optimizeLegibility;
+}
+
+:root {
+  --primary: #ddd;
+  --dark: #333;
+  --light: #fff;
+  --shadow: 0 1px 5px rgba(104, 104, 104, 0.8);
+}
+
+button {
+  display: block;
+  border: none;
+  outline: none;
+  padding: 5px 20px;
+
+  background-color: var(--dark);
+  color: var(--light);
+  padding: 5px 20px;
+}
+
+img {
+  max-width: 100%;
+}

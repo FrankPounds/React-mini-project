@@ -1,0 +1,30 @@
+.viewSectionContent {
+    margin: 2em;
+}
+
+.viewSectionContent > .viewText h3 {
+    font-size: 2em;
+    color: #56c596;
+    margin-bottom: 1em;
+}
+
+.viewSectionContent .viewImageContent > .viewImage {
+    margin: 2em;
+}
+
+.viewSectionContent .viewImageContent > .viewImage p {
+    font-size: 1.3em;
+}
+
+@media screen and (min-width: 776px) {
+    .viewImageContent {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 20px;
+    }
+
+    .viewImageContent > .viewImageTwo {
+        grid-column: 2/4;
+        grid-row: 2/3;
+    }
+}
