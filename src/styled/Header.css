@@ -1,0 +1,85 @@
+.bannerContainer {
+    height: 100vh;
+    background-color: #005897;
+}
+
+.bannerContent {
+    width: 100%;
+    position: relative;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 20px 0;
+}
+
+.bannerContent > .bannerText {
+    width: 600px;
+    position: relative;
+    text-align: left;
+}
+
+.bannerContent > .bannerText h2 {
+    text-transform: uppercase;
+    color: var(--light);
+    font-size: 4em;
+    font-weight: 900;
+    line-height: 1.5em;
+}
+
+.bannerContent > .bannerText h2 span {
+    font-size: 2em;
+}
+
+.bannerContent > .bannerText p {
+    color: var(--light);
+}
+
+.bannerContent > .bannerImage {
+    width: 600px;
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 50px;
+    margin-top: 50px;
+}
+
+.bannerContent > .bannerImage img {
+    max-width: 240px;
+}
+
+.smallImage {
+    position: absolute;
+    display: flex;
+    justify-content: space-between;
+    left: 50%;
+    bottom: 40px;
+    transform: translateY(-15px);
+}
+
+.smallImage img {
+    max-width: 40px;
+    margin: 0 1em;
+}
+
+.smallImage img:hover {
+    transform: translateY(-15px);
+    transition: .3s ease;
+}
+
+.bannerContent > .bannerIcon {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    top: 50%;
+    right: 30px;
+    transform: translateY(-50%);
+}
+
+.bannerContent > .bannerIcon svg {
+    display: block;
+    color: var(--light);
+    filter: invert(0);
+    margin: 0.5em 0;
+    transform: scale(1.5);
+}

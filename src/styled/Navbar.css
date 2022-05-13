@@ -1,0 +1,101 @@
+.mainNav {
+    display: flex;
+    justify-content: space-between;
+    /*background-color: var(--dark);*/
+}
+.navLogo {
+    display: flex;
+    padding: 5px 20px;
+}
+
+.NavLogoImage {
+    width: 45px;
+}
+
+.logoText {
+    padding-left: 10px;
+    color: var(--light);
+}
+
+nav ul {
+    position: absolute;
+    text-align: center;
+}
+
+nav ul a {
+    text-decoration: none;
+    display: block;
+    color: var(--light);
+    padding: 5px 20px;
+    margin: 1em;
+}
+nav ul a:active,
+nav ul a:hover {
+    background-color: var(--light);
+    color: var(--dark);
+}
+
+.navBar svg {
+    font-size: 30px;
+    color: var(--light);
+}
+
+.navBtn {
+    display: inline-block;
+    padding: 10px;
+    align-self: center;
+}
+
+.sideBar {
+    width: 150px;
+    height: 100vh;
+    position: fixed;
+    background-color: var(--dark);
+    top: 50px;
+    left: -100%;
+    padding-top: 60px;
+    z-index: 999;
+    overflow-x: hidden;
+    opacity: 0.8;
+    transition: .5s ease;
+}
+
+.sideBar .active {
+    left: 0%;
+    transition: .3s;
+}
+
+.sideBar .closeBtn {
+    position: absolute;
+    color: var(--light);
+    top: 0%;
+    right: 0;
+    padding: 1em;
+    font-size: 20px;
+}
+
+@media screen and (min-width: 776px) {
+    nav ul {
+        display: flex!important;
+        flex-wrap: wrap;
+        position: relative;
+    }
+
+    nav ul a {
+        background-color: transparent;
+        padding: 0 1em;
+        margin: 1em 0.5em;
+    }
+
+    nav ul a:hover {
+        color: var(--dark);
+    }
+
+    .navBtn, .closeBtn  {
+        display: none;
+    }
+
+    .sideBar {
+        display: contents;
+    }
+}
