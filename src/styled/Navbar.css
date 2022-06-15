@@ -79,6 +79,8 @@ nav ul a:hover {
         display: flex!important;
         flex-wrap: wrap;
         position: relative;
+       
+
     }
 
     nav ul a {
@@ -97,5 +99,6 @@ nav ul a:hover {
 
     .sideBar {
         display: contents;
+    
     }
 }

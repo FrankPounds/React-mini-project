@@ -17,6 +17,12 @@ function Navbar() {
     const [sideBar, setsideBar] = useState(false);
     const showSideBar = () => setsideBar(!sideBar);
 
+    const [largeImage, setlargeImage] = useState('image1');
+    
+
+    // 
+console.log(largeImage)
+
   return (
       <header className='bannerContainer'>
     <div className='Navbar'>
@@ -56,7 +62,9 @@ function Navbar() {
             <Link to='#'><button>view our products</button></Link>
         </div>
         <div className="bannerImage">
-            <img src={LargeImage} alt="lg" />
+            { largeImage === 'image1' ? <img src={LargeImage} alt='lg' /> : null }
+            {largeImage === 'image2' ? <img src={SmallImageTwo} alt='' /> : null}
+            {largeImage === 'image3' ? <img src={SmallImageThree} alt='' /> : null}
         </div>
         <div className="bannerIcon">
             <Link to=''><FacebookIcon /></Link>
@@ -65,9 +73,9 @@ function Navbar() {
         </div>
     </div>
     <div className="smallImage">
-        <div className="smallImg"><img src={SmallImageOne} alt="sm1" /></div>
-        <div className="smallImg"><img src={SmallImageTwo} alt="sm2" /></div>
-        <div className="smallImg"><img src={SmallImageThree} alt="sm3" /></div>
+        <div className="smallImg"><img src={SmallImageOne} alt="sm1" onClick={() => setlargeImage('image1')} /></div>
+        <div className="smallImg"><img src={SmallImageTwo} alt="sm2" onClick={() => setlargeImage('image2')} /></div>
+        <div className="smallImg"><img src={SmallImageThree} alt="sm3" onClick={() => setlargeImage('image3')} /></div>
     </div>
     </header>
   );
