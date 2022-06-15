@@ -61,11 +61,11 @@ console.log(largeImage)
             </p>
             <Link to='#'><button>view our products</button></Link>
         </div>
-        <div className="bannerImage">
+        {/* <div className="bannerImage">
             { largeImage === 'image1' ? <img src={LargeImage} alt='lg' /> : null }
             {largeImage === 'image2' ? <img src={SmallImageTwo} alt='' /> : null}
             {largeImage === 'image3' ? <img src={SmallImageThree} alt='' /> : null}
-        </div>
+        </div> */}
         <div className="bannerIcon">
             <Link to=''><FacebookIcon /></Link>
             <Link to=''><TwitterIcon /></Link>
