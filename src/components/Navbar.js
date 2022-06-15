@@ -56,7 +56,7 @@ console.log(largeImage)
 
     <div className="bannerContent">
         <div className="bannerText">
-            <h2>That's what <br /> <span>i like</span></h2>
+            <h2>I have told this is<br /> <span> not what i like</span></h2>
             <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vero asperiores repellat, sapiente atque reprehenderit eum consectetur officia dolores tempora quia enim libero, veniam eius accusamus voluptas dignissimos laudantium, dolorum nobis.
             </p>
             <Link to='#'><button>view our products</button></Link>
