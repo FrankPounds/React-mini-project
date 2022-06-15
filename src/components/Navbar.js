@@ -22,6 +22,8 @@ function Navbar() {
                     <a href='#infoSection'>homes</a>
                     <a href='#viewSection'>rentals</a> 
                     <a href='#interiorSection'>about</a>
+                    <a href='#interiorSection'>service</a>
+                    <a href='#interiorSection'>products</a>
                     <Link to='#' className='navContactBtn' >
                     <button>contact</button>
                 </Link>
