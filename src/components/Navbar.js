@@ -56,27 +56,27 @@ console.log(largeImage)
 
     <div className="bannerContent">
         <div className="bannerText">
-            <h2>I have told this is<br /> <span> not what i like</span></h2>
+            <h2>That's <br /> <span> what i would like</span></h2>
             <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vero asperiores repellat, sapiente atque reprehenderit eum consectetur officia dolores tempora quia enim libero, veniam eius accusamus voluptas dignissimos laudantium, dolorum nobis.
             </p>
             <Link to='#'><button>view our products</button></Link>
         </div>
-        {/* <div className="bannerImage">
+        <div className="bannerImage">
             { largeImage === 'image1' ? <img src={LargeImage} alt='lg' /> : null }
             {largeImage === 'image2' ? <img src={SmallImageTwo} alt='' /> : null}
             {largeImage === 'image3' ? <img src={SmallImageThree} alt='' /> : null}
-        </div> */}
+        </div>
         <div className="bannerIcon">
             <Link to=''><FacebookIcon /></Link>
             <Link to=''><TwitterIcon /></Link>
             <Link to=''><InstagramIcon /></Link>
         </div>
     </div>
-    <div className="smallImage">
+    {/* <div className="smallImage">
         <div className="smallImg"><img src={SmallImageOne} alt="sm1" onClick={() => setlargeImage('image1')} /></div>
         <div className="smallImg"><img src={SmallImageTwo} alt="sm2" onClick={() => setlargeImage('image2')} /></div>
         <div className="smallImg"><img src={SmallImageThree} alt="sm3" onClick={() => setlargeImage('image3')} /></div>
-    </div>
+    </div> */}
     </header>
   );
 }
