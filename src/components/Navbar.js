@@ -20,9 +20,6 @@ function Navbar() {
     const [largeImage, setlargeImage] = useState('image1');
     
 
-    // 
-console.log(largeImage)
-
   return (
       <header className='bannerContainer'>
     <div className='Navbar'>
