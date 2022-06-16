@@ -55,12 +55,12 @@ console.log(largeImage)
     </div>
 
     <div className="bannerContent">
-        {/* <div className="bannerText">
+        <div className="bannerText">
             <h2>I have told this is<br /> <span> not what i like</span></h2>
             <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vero asperiores repellat, sapiente atque reprehenderit eum consectetur officia dolores tempora quia enim libero, veniam eius accusamus voluptas dignissimos laudantium, dolorum nobis.
             </p>
             <Link to='#'><button>view our products</button></Link>
-        </div> */}
+        </div>
         {/* <div className="bannerImage">
             { largeImage === 'image1' ? <img src={LargeImage} alt='lg' /> : null }
             {largeImage === 'image2' ? <img src={SmallImageTwo} alt='' /> : null}
